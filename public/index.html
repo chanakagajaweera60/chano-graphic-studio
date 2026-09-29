@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7f0717" />
+  <meta name="description" content="CHANO GRAPHIC STUDIO — graphic design portfolio, gallery and contact." />
+  <title>CHANO GRAPHIC STUDIO — Graphic Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CHANO GRAPHIC STUDIO home">
+        <span class="logo-mark" aria-hidden="true"><span>C</span><span>G</span></span>
+        <span class="brand-copy">
+          <span class="brand-name">CHANO GRAPHIC STUDIO</span>
+          <span class="brand-sub">CREATIVE DESIGN • EST. 2024</span>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="https://wa.me/94743602001" target="_blank" rel="noreferrer">WhatsApp</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <p class="eyebrow">GRAPHIC DESIGN • VISUAL IDENTITY • DIGITAL CREATIVE</p>
+          <h1>Designs that make<br /><em>your brand stand out.</em></h1>
+          <p class="hero-text">Welcome to my creative gallery. Explore selected work by category and discover visuals crafted for brands, events, social media and more.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#work">Explore My Work <span>↘</span></a>
+            <a class="btn btn-glass" href="https://wa.me/94743602001?text=Hi%20Chano%20Graphic%20Studio%2C%20I%27d%20like%20to%20discuss%20a%20design%20project." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-top">OPEN SINCE</span>
+          <strong>2024</strong>
+          <span class="badge-bottom">CREATIVE STUDIO</span>
+        </div>
+      </section>
+
+      <section class="work-section" id="work">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">PORTFOLIO</p>
+            <h2>Explore the gallery</h2>
+            <p class="section-description">Browse the work by category. Click any design to view it in detail.</p>
+          </div>
+          <button class="manage-btn" id="manageBtn" type="button"><span class="lock-icon">✦</span> Manage Gallery</button>
+        </div>
+
+        <div class="category-bar" id="categoryBar" role="tablist" aria-label="Design categories"></div>
+
+        <div class="toolbar">
+          <div class="result-count" id="resultCount">Loading gallery…</div>
+          <label class="search-wrap" aria-label="Search designs">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Search designs..." />
+          </label>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+        <div class="empty-state hidden" id="emptyState">
+          <div class="empty-icon">◇</div>
+          <h3>No designs found</h3>
+          <p>Try another category or search term.</p>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-card">
+          <div>
+            <p class="section-kicker">CHANO GRAPHIC STUDIO</p>
+            <h2>Built for bold ideas, clean visuals and memorable brands.</h2>
+          </div>
+          <div class="about-copy">
+            <p>Started in 2024, CHANO GRAPHIC STUDIO creates modern visuals with a strong focus on detail, composition and brand personality.</p>
+            <a href="https://wa.me/94743602001" target="_blank" rel="noreferrer">Let’s create something great →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>CHANO GRAPHIC STUDIO</strong><span>© <span id="year"></span> • Est. 2024</span></div>
+      <a href="https://wa.me/94743602001" target="_blank" rel="noreferrer">WhatsApp: 074 360 2001</a>
+    </footer>
+  </div>
+
+  <div class="modal hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Design preview">
+    <button class="modal-close" id="lightboxClose" type="button" aria-label="Close">×</button>
+    <div class="lightbox-inner">
+      <div class="lightbox-media"><img id="lightboxImage" alt="" /></div>
+      <div class="lightbox-meta">
+        <span class="pill" id="lightboxCategory"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDescription"></p>
+        <a class="btn btn-gold btn-small" id="lightboxWhatsapp" href="#" target="_blank" rel="noreferrer">Ask about this design ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="adminModal" role="dialog" aria-modal="true" aria-label="Manage gallery">
+    <button class="modal-close" id="adminClose" type="button" aria-label="Close">×</button>
+    <div class="admin-panel">
+      <div class="admin-header">
+        <div>
+          <p class="section-kicker">STUDIO CONTROL</p>
+          <h2>Manage Gallery</h2>
+          <p>Upload new designs directly from your device. Uploaded designs appear in the customer gallery.</p>
+        </div>
+        <span class="admin-chip">ADMIN</span>
+      </div>
+
+      <div id="loginView">
+        <label class="field"><span>Admin Key</span><input id="adminKey" type="password" autocomplete="current-password" placeholder="Enter your admin key" /></label>
+        <div class="admin-row">
+          <button class="btn btn-gold" id="adminLogin" type="button">Unlock Gallery</button>
+          <span class="hint">Set your key in the <code>.env</code> file.</span>
+        </div>
+        <div class="admin-note">The upload control is protected by your server-side admin key. Keep it private.</div>
+      </div>
+
+      <div id="uploadView" class="hidden">
+        <form id="uploadForm">
+          <div class="form-grid">
+            <label class="field"><span>Design title</span><input id="designTitle" name="title" type="text" placeholder="e.g. Summer Festival Poster" /></label>
+            <label class="field"><span>Category</span><select id="designCategory" name="category"></select></label>
+          </div>
+          <label class="field"><span>Description <small>(optional)</small></span><textarea id="designDescription" name="description" rows="3" placeholder="A short description about this design..."></textarea></label>
+          <label class="upload-drop" for="imageFiles">
+            <input id="imageFiles" name="images" type="file" accept="image/*" multiple required />
+            <span class="upload-plus">＋</span>
+            <strong>Choose design images</strong>
+            <span>JPG, PNG, WEBP, GIF or SVG • up to 10 files • 12 MB each</span>
+            <span id="fileNames" class="file-names">No files selected</span>
+          </label>
+          <div class="admin-row">
+            <button class="btn btn-gold" type="submit">Upload to Gallery ↗</button>
+            <button class="btn btn-dark" id="lockGallery" type="button">Lock</button>
+            <span id="uploadStatus" class="status"></span>
+          </div>
+        </form>
+
+        <div class="admin-list-head"><strong>Current designs</strong><span>Use delete for uploaded work only.</span></div>
+        <div id="adminList" class="admin-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

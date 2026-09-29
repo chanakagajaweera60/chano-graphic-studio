@@ -1,0 +1,77 @@
+[
+  {
+    "id": "demo-01",
+    "title": "Neon Night Social Post",
+    "category": "Social Media",
+    "description": "Demo artwork — replace it with your own design.",
+    "filename": "assets/demo/social-1.svg",
+    "createdAt": "2026-01-01T10:00:00.000Z",
+    "demo": true
+  },
+  {
+    "id": "demo-02",
+    "title": "Luxury Brand Poster",
+    "category": "Posters & Flyers",
+    "description": "Demo artwork — replace it with your own design.",
+    "filename": "assets/demo/poster-1.svg",
+    "createdAt": "2026-01-02T10:00:00.000Z",
+    "demo": true
+  },
+  {
+    "id": "demo-03",
+    "title": "Minimal Logo Concept",
+    "category": "Branding & Logos",
+    "description": "Demo artwork — replace it with your own design.",
+    "filename": "assets/demo/logo-1.svg",
+    "createdAt": "2026-01-03T10:00:00.000Z",
+    "demo": true
+  },
+  {
+    "id": "demo-04",
+    "title": "Live Music Visual",
+    "category": "Event & Music",
+    "description": "Demo artwork — replace it with your own design.",
+    "filename": "assets/demo/event-1.svg",
+    "createdAt": "2026-01-04T10:00:00.000Z",
+    "demo": true
+  },
+  {
+    "id": "demo-05",
+    "title": "Creative Campaign Artwork",
+    "category": "Creative & Other",
+    "description": "Demo artwork — replace it with your own design.",
+    "filename": "assets/demo/creative-1.svg",
+    "createdAt": "2026-01-05T10:00:00.000Z",
+    "demo": true
+  },
+  {
+    "id": "4133ba6d-da77-405a-912a-0d8900d4f369",
+    "title": "first logo 1",
+    "category": "Branding & Logos",
+    "description": "coustermer qecest",
+    "filename": "/uploads/1790435340612-1ec0e1cd79.png",
+    "originalName": "lassaÃ­ .lk-01.png",
+    "createdAt": "2026-09-26T15:09:00.643Z",
+    "demo": false
+  },
+  {
+    "id": "6a76855b-25d9-4d47-b9ba-d3a7dc61ac10",
+    "title": "first logo 2",
+    "category": "Branding & Logos",
+    "description": "coustermer qecest",
+    "filename": "/uploads/1790435340629-3adf629969.png",
+    "originalName": "ott.png",
+    "createdAt": "2026-09-26T15:09:00.643Z",
+    "demo": false
+  },
+  {
+    "id": "6e51fd72-7941-45ba-ad42-154a142d3578",
+    "title": "first logo 3",
+    "category": "Branding & Logos",
+    "description": "coustermer qecest",
+    "filename": "/uploads/1790435340632-3152b5378b.png",
+    "originalName": "Untitled-1.png",
+    "createdAt": "2026-09-26T15:09:00.643Z",
+    "demo": false
+  }
+]
